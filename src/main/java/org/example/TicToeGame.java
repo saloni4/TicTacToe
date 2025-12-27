@@ -73,7 +73,7 @@ public class TicToeGame {
                 diagonalMatch=false;
         }
         for(int i=0,j= gameBoard.size-1;i<gameBoard.size;i++,j--){
-            if(gameBoard.board[row][i]==null || gameBoard.board[row][i].pieceType!=pieceType )
+            if(gameBoard.board[j][i]==null || gameBoard.board[j][i].pieceType!=pieceType )
                 antidiagonalMatch=false;
         }
         return rowMatch||colMatch||diagonalMatch||antidiagonalMatch;
